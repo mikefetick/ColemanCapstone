@@ -49,7 +49,9 @@ class Analysis extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'analysisstatus' => array(self::HAS_ONE, 'Analysisstatus', 'ID'),
-			'surveys' => array(self::HAS_MANY, 'Survey', 'idAnalysis'),
+			'survey' => array(self::HAS_MANY, 'Survey', 'idAnalysis'),
+            'customer' => array(self::BELONGS_TO, 'Customer', 'CustomerID'),
+            'user' => array(self::BELONGS_TO, 'User', 'UserID'),
 		);
 	}
 
@@ -59,7 +61,7 @@ class Analysis extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idAnalysis' => 'Id Analysis',
+			'idAnalysis' => 'Analysis',
 			'CustomerID' => 'Customer',
 			'UserID' => 'User',
 			'Comments' => 'Comments',
@@ -104,4 +106,23 @@ class Analysis extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    /**
+     * @return array of valid users for this project, indexed by user IDs  
+     */
+    public function getUserOptions()
+    {
+        $usersArray = CHtml::listData($this->user, 'idUser', 'LastName');
+        return $usersArray;
+    }
+
+    /**
+     * @return array of valid customers for this project, indexed by customers IDs  
+     */
+    public function getCustomerOptions()
+    {
+        $customersArray = CHtml::listData($this->customer, 'idCustomer', 'ContactTitle');
+        return $customersArray;
+    }
+
 }

@@ -22,13 +22,15 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CustomerID'); ?>
-		<?php echo $form->textField($model,'CustomerID'); ?>
+        <?php echo $form->textField($model,'CustomerID'); ?>
+        <?php //echo $form->dropDownList($model,'CustomerID', $model->idAnalysis->getCustomerOptions()); ?>
 		<?php echo $form->error($model,'CustomerID'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'UserID'); ?>
-		<?php echo $form->textField($model,'UserID'); ?>
+        <?php echo $form->textField($model,'UserID'); ?>
+        <?php //echo $form->dropDownList($model,'UserID', $model->idAnalysis->getUserOptions()); ?>
 		<?php echo $form->error($model,'UserID'); ?>
 	</div>
 

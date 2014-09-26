@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Question', 'url'=>array('index')),
-	array('label'=>'Manage Question', 'url'=>array('admin')),
+	array('label'=>'List Questions', 'url'=>array('index')),
+	array('label'=>'Manage Questions', 'url'=>array('admin')),
 );
 ?>
 

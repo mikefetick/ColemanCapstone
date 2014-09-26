@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Analysis', 'url'=>array('index')),
-	array('label'=>'Manage Analysis', 'url'=>array('admin')),
+	array('label'=>'List Analyses', 'url'=>array('index')),
+	array('label'=>'Manage Analyses', 'url'=>array('admin')),
 );
 ?>
 

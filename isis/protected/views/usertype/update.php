@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Usertype', 'url'=>array('index')),
+	array('label'=>'List Usertypes', 'url'=>array('index')),
 	array('label'=>'Create Usertype', 'url'=>array('create')),
 	array('label'=>'View Usertype', 'url'=>array('view', 'id'=>$model->idUserType)),
-	array('label'=>'Manage Usertype', 'url'=>array('admin')),
+	array('label'=>'Manage Usertypes', 'url'=>array('admin')),
 );
 ?>
 

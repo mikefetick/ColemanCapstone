@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Analysisstatus', 'url'=>array('index')),
-	array('label'=>'Create Analysisstatus', 'url'=>array('create')),
-	array('label'=>'Update Analysisstatus', 'url'=>array('update', 'id'=>$model->ID)),
-	array('label'=>'Delete Analysisstatus', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ID),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Analysisstatus', 'url'=>array('admin')),
+	array('label'=>'List Analysis Status', 'url'=>array('index')),
+	array('label'=>'Create Analysis Status', 'url'=>array('create')),
+	array('label'=>'Update Analysis Status', 'url'=>array('update', 'id'=>$model->ID)),
+	array('label'=>'Delete Analysis Status', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ID),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manage Analysis Status', 'url'=>array('admin')),
 );
 ?>
 

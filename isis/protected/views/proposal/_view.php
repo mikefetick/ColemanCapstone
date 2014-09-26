@@ -2,6 +2,11 @@
 /* @var $this ProposalController */
 /* @var $data Proposal */
 ?>
+<?php Yii::app()-> clientScript-> registerCssFile(
+    Yii::app()-> assetManager-> publish(
+        Yii::getPathOfAlias('application.assets').'/proposals.css'
+    ))
+?>
 
 <div class="view">
 
@@ -14,7 +19,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('TimeStamp')); ?>:</b>
-	<?php echo CHtml::encode($data->TimeStamp); ?>
+	<?php echo CHtml::encode($data->TimeStamp), array('time'=>$theTime); ?>
 	<br />
 
 

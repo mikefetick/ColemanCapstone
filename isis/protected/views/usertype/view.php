@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Usertype', 'url'=>array('index')),
+	array('label'=>'List Usertypes', 'url'=>array('index')),
 	array('label'=>'Create Usertype', 'url'=>array('create')),
 	array('label'=>'Update Usertype', 'url'=>array('update', 'id'=>$model->idUserType)),
 	array('label'=>'Delete Usertype', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idUserType),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Usertype', 'url'=>array('admin')),
+	array('label'=>'Manage Usertypes', 'url'=>array('admin')),
 );
 ?>
 

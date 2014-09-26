@@ -49,7 +49,9 @@ class Customer extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-		);
+            'status' => array(self::BELONGS_TO, 'Status', 'StatusID'),
+            'analysis' => array(self::HAS_ONE, 'Analysis', 'CustomerID'),
+        );
 	}
 
 	/**
@@ -58,14 +60,14 @@ class Customer extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idCustomer' => 'Id Customer',
+			'idCustomer' => 'Id No',
 			'Company' => 'Company',
-			'ContactLast' => 'Contact Last',
-			'ContactFirst' => 'Contact First',
+			'ContactLast' => 'Last.Name',
+			'ContactFirst' => 'First.Name',
 			'EMail' => 'Email',
 			'Phone' => 'Phone',
-			'ContactTitle' => 'Contact Title',
-			'BusinessAddress' => 'Business Address',
+			'ContactTitle' => 'Title',
+			'BusinessAddress' => 'Address',
 			'StatusID' => 'Status',
 		);
 	}

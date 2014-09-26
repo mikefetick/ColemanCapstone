@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Create Customer', 'url'=>array('create')),
-	array('label'=>'Manage Customer', 'url'=>array('admin')),
+	array('label'=>'Manage Customers', 'url'=>array('admin')),
 );
 ?>
 
@@ -17,4 +17,10 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
+    'itemsTagName' => 'ol',
+    'itemsCssClass' => 'customers',
+    'sortableAttributes' => array(
+        'ContactLast', 'EMail', 'StatusID'
+    ),
+    'template' => '{sorter} {pager} {items} {sorter} {pager}',
 )); ?>

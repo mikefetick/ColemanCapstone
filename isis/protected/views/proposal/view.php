@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Proposal', 'url'=>array('index')),
+	array('label'=>'List Proposals', 'url'=>array('index')),
 	array('label'=>'Create Proposal', 'url'=>array('create')),
 	array('label'=>'Update Proposal', 'url'=>array('update', 'id'=>$model->ProposalID)),
 	array('label'=>'Delete Proposal', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ProposalID),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Proposal', 'url'=>array('admin')),
+	array('label'=>'Manage Proposals', 'url'=>array('admin')),
 );
 ?>
 

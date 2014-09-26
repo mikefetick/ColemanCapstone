@@ -46,8 +46,7 @@ class Survey extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'question' => array(self::HAS_ONE, 'Question', 'idQuestion'),
-			'idAnalysis0' => array(self::BELONGS_TO, 'Analysis', 'idAnalysis'),
+			'analysis' => array(self::BELONGS_TO, 'Analysis', 'idAnalysis'),
 		);
 	}
 

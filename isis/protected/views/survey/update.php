@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Survey', 'url'=>array('index')),
+	array('label'=>'List Surveys', 'url'=>array('index')),
 	array('label'=>'Create Survey', 'url'=>array('create')),
 	array('label'=>'View Survey', 'url'=>array('view', 'id'=>$model->idSurvey)),
-	array('label'=>'Manage Survey', 'url'=>array('admin')),
+	array('label'=>'Manage Surveys', 'url'=>array('admin')),
 );
 ?>
 

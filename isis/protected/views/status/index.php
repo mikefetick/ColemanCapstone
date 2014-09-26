@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Create Status', 'url'=>array('create')),
-	array('label'=>'Manage Status', 'url'=>array('admin')),
+	array('label'=>'Manage Statuses', 'url'=>array('admin')),
 );
 ?>
 

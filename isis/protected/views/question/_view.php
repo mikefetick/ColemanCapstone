@@ -2,6 +2,11 @@
 /* @var $this QuestionController */
 /* @var $data Question */
 ?>
+<?php Yii::app()-> clientScript-> registerCssFile(
+    Yii::app()-> assetManager-> publish(
+        Yii::getPathOfAlias('application.assets').'/questions.css'
+    ))
+?>
 
 <div class="view">
 
@@ -32,6 +37,5 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('CategoryID')); ?>:</b>
 	<?php echo CHtml::encode($data->CategoryID); ?>
 	<br />
-
 
 </div>

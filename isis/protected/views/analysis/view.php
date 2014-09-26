@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Analysis', 'url'=>array('index')),
+	array('label'=>'List Analyses', 'url'=>array('index')),
 	array('label'=>'Create Analysis', 'url'=>array('create')),
 	array('label'=>'Update Analysis', 'url'=>array('update', 'id'=>$model->idAnalysis)),
 	array('label'=>'Delete Analysis', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idAnalysis),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Analysis', 'url'=>array('admin')),
+	array('label'=>'Manage Analyses', 'url'=>array('admin')),
 );
 ?>
 

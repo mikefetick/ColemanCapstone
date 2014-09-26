@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Analysisstatus', 'url'=>array('index')),
-	array('label'=>'Create Analysisstatus', 'url'=>array('create')),
-	array('label'=>'View Analysisstatus', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Analysisstatus', 'url'=>array('admin')),
+	array('label'=>'List Analysis Status', 'url'=>array('index')),
+	array('label'=>'Create Analysis Status', 'url'=>array('create')),
+	array('label'=>'View Analysis Status', 'url'=>array('view', 'id'=>$model->ID)),
+	array('label'=>'Manage Analysis Status', 'url'=>array('admin')),
 );
 ?>
 

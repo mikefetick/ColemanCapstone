@@ -2,6 +2,11 @@
 /* @var $this UserController */
 /* @var $data User */
 ?>
+<?php Yii::app()-> clientScript-> registerCssFile(
+    Yii::app()-> assetManager-> publish(
+        Yii::getPathOfAlias('application.assets').'/users.css'
+    ))
+?>
 
 <div class="view">
 
@@ -10,7 +15,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('UserTypeID')); ?>:</b>
-	<?php echo CHtml::encode($data->UserTypeID); ?>
+    <?php echo CHtml::link(CHtml::encode($data->UserTypeID), array('view', 'UserType/UserTypeID'=>'idUserType')); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('LastName')); ?>:</b>

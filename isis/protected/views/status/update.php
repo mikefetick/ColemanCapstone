@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Status', 'url'=>array('index')),
+	array('label'=>'List Statuses', 'url'=>array('index')),
 	array('label'=>'Create Status', 'url'=>array('create')),
 	array('label'=>'View Status', 'url'=>array('view', 'id'=>$model->idStatus)),
-	array('label'=>'Manage Status', 'url'=>array('admin')),
+	array('label'=>'Manage Statuses', 'url'=>array('admin')),
 );
 ?>
 

@@ -1,0 +1,14 @@
+ol.surveys {
+    text-align: left;
+    list-style: none;
+    font-stretch: ultra-expanded;
+    margin: 1em 0;
+}
+ol.surveys>li {
+    margin: 1em;
+    padding: 1em;
+    font-stretch: ultra-expanded;
+    background: #fcfcfc;
+    border: 1px solid #9aafe5;
+}
+

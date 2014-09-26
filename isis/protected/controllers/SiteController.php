@@ -52,30 +52,45 @@ class SiteController extends Controller
 	/**
 	 * Displays the contact page
 	 */
-	public function actionContact()
-	{
-		$model=new ContactForm;
-		if(isset($_POST['ContactForm']))
-		{
-			$model->attributes=$_POST['ContactForm'];
-			if($model->validate())
-			{
-				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
-				$headers="From: $name <{$model->email}>\r\n".
-					"Reply-To: {$model->email}\r\n".
-					"MIME-Version: 1.0\r\n".
-					"Content-Type: text/plain; charset=UTF-8";
+    public function actionContact()
+    {
+        $model=new ContactForm;
+        if(isset($_POST['ContactForm']))
+        {
+            $model->attributes=$_POST['ContactForm'];
+            if($model->validate())
+            {
+                $name='=?UTF-8?B?'.base64_encode($model->name).'?=';
+                $subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
+                $headers="From: $name <{$model->email}>\r\n".
+                    "Reply-To: {$model->email}\r\n".
+                    "MIME-Version: 1.0\r\n".
+                    "Content-Type: text/plain; charset=UTF-8";
 
-				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
-				$this->refresh();
-			}
-		}
-		$this->render('contact',array('model'=>$model));
-	}
+                mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
+                Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+                $this->refresh();
+            }
+        }
+        $this->render('contact',array('model'=>$model));
+    }
 
-	/**
+    public function actionRequest()
+    {
+        $model=new RequestForm;
+        if(isset($_POST['RequestForm']))
+        {
+            $model->attributes=$_POST['RequestForm'];
+            if($model->validate())
+            {
+                Yii::app()->user->setFlash('request','Thank you for sharing your interest with us. We will respond to you as soon as possible.');
+                $this->refresh();
+            }
+        }
+        $this->render('request',array('model'=>$model));
+    }
+
+    /**
 	 * Displays the login page
 	 */
 	public function actionLogin()
@@ -95,7 +110,18 @@ class SiteController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
+            {
+                // ... and redirect to the previous page if valid
+				//$this->redirect(Yii::app()->user->returnUrl);
+                if($model->username === 'admin')
+                {
+                    $this->redirect(array('Dashboard/Admin'));
+                } else
+                {
+                    $this->redirect(array('Dashboard/Analysts'));
+                }
+            }
+
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));

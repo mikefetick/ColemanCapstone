@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Usertype', 'url'=>array('index')),
-	array('label'=>'Manage Usertype', 'url'=>array('admin')),
+	array('label'=>'List Usertypes', 'url'=>array('index')),
+	array('label'=>'Manage Usertypes', 'url'=>array('admin')),
 );
 ?>
 

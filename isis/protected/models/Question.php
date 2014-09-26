@@ -14,7 +14,6 @@
  *
  * The followings are the available model relations:
  * @property Category $category
- * @property Survey $idQuestion0
  */
 class Question extends CActiveRecord
 {
@@ -51,7 +50,6 @@ class Question extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'category' => array(self::BELONGS_TO, 'Category', 'CategoryID'),
-			'idQuestion0' => array(self::BELONGS_TO, 'Survey', 'idQuestion'),
 		);
 	}
 

@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Proposal', 'url'=>array('index')),
+	array('label'=>'List Proposals', 'url'=>array('index')),
 	array('label'=>'Create Proposal', 'url'=>array('create')),
 	array('label'=>'View Proposal', 'url'=>array('view', 'id'=>$model->ProposalID)),
-	array('label'=>'Manage Proposal', 'url'=>array('admin')),
+	array('label'=>'Manage Proposals', 'url'=>array('admin')),
 );
 ?>
 

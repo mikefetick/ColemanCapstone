@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Status', 'url'=>array('index')),
+	array('label'=>'List Statuses', 'url'=>array('index')),
 	array('label'=>'Create Status', 'url'=>array('create')),
 	array('label'=>'Update Status', 'url'=>array('update', 'id'=>$model->idStatus)),
 	array('label'=>'Delete Status', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idStatus),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Status', 'url'=>array('admin')),
+	array('label'=>'Manage Statuses', 'url'=>array('admin')),
 );
 ?>
 

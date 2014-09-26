@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Survey', 'url'=>array('index')),
+	array('label'=>'List Surveys', 'url'=>array('index')),
 	array('label'=>'Create Survey', 'url'=>array('create')),
 	array('label'=>'Update Survey', 'url'=>array('update', 'id'=>$model->idSurvey)),
 	array('label'=>'Delete Survey', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idSurvey),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Survey', 'url'=>array('admin')),
+	array('label'=>'Manage Surveys', 'url'=>array('admin')),
 );
 ?>
 

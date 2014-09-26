@@ -54,6 +54,7 @@ class User extends CActiveRecord
 		return array(
 			'status' => array(self::BELONGS_TO, 'Status', 'StatusID'),
 			'userType' => array(self::BELONGS_TO, 'Usertype', 'UserTypeID'),
+            'analysis' => array(self::HAS_MANY, 'Analysis', 'AnalysisID'),
 		);
 	}
 
@@ -64,9 +65,9 @@ class User extends CActiveRecord
 	{
 		return array(
 			'idUser' => 'Id User',
-			'UserTypeID' => 'User Type',
-			'LastName' => 'Last Name',
-			'FirstName' => 'First Name',
+			'UserTypeID' => 'User.Type',
+			'LastName' => 'Last.Name',
+			'FirstName' => 'First.Name',
 			'Password' => 'Password',
 			'Email' => 'Email',
 			'Phone' => 'Phone',

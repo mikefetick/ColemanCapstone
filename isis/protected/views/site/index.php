@@ -7,7 +7,7 @@ $this->pageTitle=Yii::app()->name;
 /* <![CDATA[ */
 	function requestProposal() {
 		// Open survey page in same window
-		window.open("./index.php?r=customer/create", "_self");
+		window.open("./index.php?r=site/request", "_self");
 	}
 	function askQuestion() {
 		// Open the contact page in same window
@@ -28,10 +28,10 @@ $this->pageTitle=Yii::app()->name;
 	<p>Let us help you.</p>
 	</h3>
 	<p><h1>
-	<input type="button" value="Request a Proposal Online" style="width: 450px" 
+	<input type="button" value="Request a Proposal Online" style="width: 350px"
 		onclick="requestProposal();"/>&nbsp;
 	</br>
-	<input type="button" value="Ask us a Question" style="width: 450px"
+	<input type="button" value="Ask us a Question" style="width: 350px"
         onclick="askQuestion();"/>&nbsp;
 	</h1></p>
 </body>

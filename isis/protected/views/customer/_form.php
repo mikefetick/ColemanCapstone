@@ -25,7 +25,13 @@
 		<?php echo $form->error($model,'Company'); ?>
 	</div>
 
-	<div class="row">
+    <div class="row">
+        <?php echo $form->labelEx($model,'ContactTitle'); ?>
+        <?php echo $form->textArea($model,'ContactTitle',array('rows'=>6, 'cols'=>50)); ?>
+        <?php echo $form->error($model,'ContactTitle'); ?>
+    </div>
+
+    <div class="row">
 		<?php echo $form->labelEx($model,'ContactLast'); ?>
 		<?php echo $form->textArea($model,'ContactLast',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'ContactLast'); ?>
@@ -37,7 +43,13 @@
 		<?php echo $form->error($model,'ContactFirst'); ?>
 	</div>
 
-	<div class="row">
+    <div class="row">
+        <?php echo $form->labelEx($model,'BusinessAddress'); ?>
+        <?php echo $form->textArea($model,'BusinessAddress',array('rows'=>6, 'cols'=>50)); ?>
+        <?php echo $form->error($model,'BusinessAddress'); ?>
+    </div>
+
+    <div class="row">
 		<?php echo $form->labelEx($model,'EMail'); ?>
 		<?php echo $form->textField($model,'EMail',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'EMail'); ?>
@@ -47,18 +59,6 @@
 		<?php echo $form->labelEx($model,'Phone'); ?>
 		<?php echo $form->textField($model,'Phone'); ?>
 		<?php echo $form->error($model,'Phone'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'ContactTitle'); ?>
-		<?php echo $form->textArea($model,'ContactTitle',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'ContactTitle'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'BusinessAddress'); ?>
-		<?php echo $form->textArea($model,'BusinessAddress',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'BusinessAddress'); ?>
 	</div>
 
 	<div class="row">

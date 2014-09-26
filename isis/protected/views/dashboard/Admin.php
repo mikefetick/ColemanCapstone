@@ -42,18 +42,18 @@ $this->breadcrumbs=array(
 <div id="timestamp"><h3><?php echo $time; ?></h3></div>
 <h1>ADMIN DASHBOARD</h1>
 <p><h1>
-    <input type="button" value="SURVEYS" style="width: 150px"
+    <input type="button" value="SURVEYS" style="width: 100px"
            onclick="listSurveys();"/>&nbsp;
-    <input type="button" value="ANALYSES" style="width: 150px"
+    <input type="button" value="ANALYSES" style="width: 100px"
            onclick="listAnalyses();"/>&nbsp;
-    <input type="button" value="PROPOSALS" style="width: 150px"
+    <input type="button" value="PROPOSALS" style="width: 100px"
            onclick="listProposals();"/>&nbsp;
     <br />
-    <input type="button" value="CUSTOMERS" style="width: 150px"
+    <input type="button" value="CUSTOMERS" style="width: 100px"
            onclick="listCustomers();"/>&nbsp;
-    <input type="button" value="QUESTIONS" style="width: 150px"
+    <input type="button" value="QUESTIONS" style="width: 100px"
            onclick="listQuestions();"/>&nbsp;
-    <input type="button" value="USERS" style="width: 150px"
+    <input type="button" value="USERS" style="width: 100px"
            onclick="listUsers();"/>&nbsp;
 </h1></p>
 </body>

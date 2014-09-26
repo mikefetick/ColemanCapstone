@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Analysisstatus', 'url'=>array('create')),
-	array('label'=>'Manage Analysisstatus', 'url'=>array('admin')),
+	array('label'=>'Create Analysis Status', 'url'=>array('create')),
+	array('label'=>'Manage Analysis Status', 'url'=>array('admin')),
 );
 ?>
 

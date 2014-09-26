@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Create Survey', 'url'=>array('create')),
-	array('label'=>'Manage Survey', 'url'=>array('admin')),
+	array('label'=>'Manage Surveys', 'url'=>array('admin')),
 );
 ?>
 
@@ -17,4 +17,10 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
+    'itemsTagName' => 'ol',
+    'itemsCssClass' => 'surveys',
+    'sortableAttributes' => array(
+        'Answer', 'idAnalysis'
+    ),
+    'template' => '{sorter} {pager} {items} {sorter} {pager}',
 )); ?>

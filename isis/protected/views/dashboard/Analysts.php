@@ -13,7 +13,7 @@ $this->breadcrumbs=array(
         // Open the contact page in same window
         window.open("./index.php?r=survey", "_self");
     }
-    function listAnalysises() {
+    function listAnalyses() {
         // Open the contact page in same window
         window.open("./index.php?r=analysis", "_self");
     }
@@ -29,11 +29,11 @@ $this->breadcrumbs=array(
 <div id="timestamp2"><h3><?php echo $time; ?></h3></div>
 <h1>ANALYSTS DASHBOARD</h1>
 <p><h1>
-    <input type="button" value="SURVEYS" style="width: 150px"
+    <input type="button" value="SURVEYS" style="width: 100px"
            onclick="listSurveys();"/>&nbsp;
-    <input type="button" value="ANALYSES" style="width: 150px"
-           onclick="listAnalysises();"/>&nbsp;
-    <input type="button" value="PROPOSALS" style="width: 150px"
+    <input type="button" value="ANALYSES" style="width: 100px"
+           onclick="listAnalyses();"/>&nbsp;
+    <input type="button" value="PROPOSALS" style="width: 100px"
            onclick="listProposals();"/>&nbsp;
     <br />
     <br />

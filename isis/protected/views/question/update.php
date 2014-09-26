@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Question', 'url'=>array('index')),
+	array('label'=>'List Questions', 'url'=>array('index')),
 	array('label'=>'Create Question', 'url'=>array('create')),
 	array('label'=>'View Question', 'url'=>array('view', 'id'=>$model->idQuestion)),
-	array('label'=>'Manage Question', 'url'=>array('admin')),
+	array('label'=>'Manage Questions', 'url'=>array('admin')),
 );
 ?>
 
