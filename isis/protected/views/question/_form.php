@@ -5,6 +5,7 @@
 ?>
 
 <div class="form">
+<span style="text-align: left" >
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'question-form',
@@ -21,31 +22,31 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Question'); ?>
-		<?php echo $form->textArea($model,'Question',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'Question',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'Question'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'OptA'); ?>
-		<?php echo $form->textArea($model,'OptA',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'OptA',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'OptA'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'OptB'); ?>
-		<?php echo $form->textArea($model,'OptB',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'OptB',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'OptB'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'OptC'); ?>
-		<?php echo $form->textArea($model,'OptC',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'OptC',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'OptC'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'OptD'); ?>
-		<?php echo $form->textArea($model,'OptD',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'OptD',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'OptD'); ?>
 	</div>
 

@@ -5,6 +5,7 @@
 ?>
 
 <div class="form">
+<span style="text-align: left" >
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'survey-form',

@@ -5,6 +5,7 @@
 ?>
 
 <div class="form">
+<span style="text-align: left" >
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'customer-form',
@@ -21,31 +22,31 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Company'); ?>
-		<?php echo $form->textArea($model,'Company',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'Company',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'Company'); ?>
 	</div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'ContactTitle'); ?>
-        <?php echo $form->textArea($model,'ContactTitle',array('rows'=>6, 'cols'=>50)); ?>
+        <?php echo $form->textField($model,'ContactTitle',array('rows'=>6, 'cols'=>50)); ?>
         <?php echo $form->error($model,'ContactTitle'); ?>
     </div>
 
     <div class="row">
 		<?php echo $form->labelEx($model,'ContactLast'); ?>
-		<?php echo $form->textArea($model,'ContactLast',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'ContactLast',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'ContactLast'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ContactFirst'); ?>
-		<?php echo $form->textArea($model,'ContactFirst',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'ContactFirst',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'ContactFirst'); ?>
 	</div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'BusinessAddress'); ?>
-        <?php echo $form->textArea($model,'BusinessAddress',array('rows'=>6, 'cols'=>50)); ?>
+        <?php echo $form->textField($model,'BusinessAddress',array('rows'=>6, 'cols'=>50)); ?>
         <?php echo $form->error($model,'BusinessAddress'); ?>
     </div>
 

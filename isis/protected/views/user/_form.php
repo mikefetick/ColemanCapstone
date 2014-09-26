@@ -5,6 +5,7 @@
 ?>
 
 <div class="form">
+<span style="text-align: left" >
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'user-form',
@@ -12,6 +13,7 @@
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
+    // echo $form->dropDownList($model,'UserTypeID', $model->userType->getUserOptions() );
 	'enableAjaxValidation'=>false,
 )); ?>
 
@@ -21,20 +23,19 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'UserTypeID'); ?>
-		<?php// echo $form->textField($model,'UserTypeID'); ?>
-        <?php echo $form->dropDownList($model,'UserTypeID', $model->userType->getUserOptions() ); ?>
+		<?php echo $form->textField($model,'UserTypeID'); ?>
         <?php echo $form->error($model,'UserTypeID'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'LastName'); ?>
-		<?php echo $form->textArea($model,'LastName',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'LastName',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'LastName'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'FirstName'); ?>
-		<?php echo $form->textArea($model,'FirstName',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'FirstName',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'FirstName'); ?>
 	</div>
 

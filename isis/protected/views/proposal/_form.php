@@ -5,6 +5,7 @@
 ?>
 
 <div class="form">
+<span style="text-align: left" >
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'proposal-form',
