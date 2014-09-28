@@ -14,7 +14,11 @@
 	<?php echo CHtml::link(CHtml::encode($data->idQuestion), array('view', 'id'=>$data->idQuestion)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Question')); ?>:</b>
+    <b><?php echo CHtml::encode($data->getAttributeLabel('CategoryID')); ?>:</b>
+    <?php echo CHtml::link(CHtml::encode($data->CategoryID), array('category/view', 'id'=>($data->CategoryID))); ?>
+    <br />
+
+    <b><?php echo CHtml::encode($data->getAttributeLabel('Question')); ?>:</b>
 	<?php echo CHtml::encode($data->Question); ?>
 	<br />
 
@@ -32,10 +36,6 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('OptD')); ?>:</b>
 	<?php echo CHtml::encode($data->OptD); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('CategoryID')); ?>:</b>
-	<?php echo CHtml::encode($data->CategoryID); ?>
 	<br />
 
 </div>

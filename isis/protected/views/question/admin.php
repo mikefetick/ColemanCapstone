@@ -3,13 +3,15 @@
 /* @var $model Question */
 
 $this->breadcrumbs=array(
+    'Dashboard'=>array('/dashboard/Admin'),
 	'Questions'=>array('index'),
 	'Manage',
 );
 
 $this->menu=array(
 	array('label'=>'List Questions', 'url'=>array('index')),
-	array('label'=>'Create Question', 'url'=>array('create')),
+    array('label'=>'Create Question', 'url'=>array('create')),
+    array('label'=>'List Categories', 'url'=>array('category/index')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -52,14 +54,15 @@ $('.search-form form').submit(function(){
 	'filter'=>$model,
 	'columns'=>array(
 		'idQuestion',
+        array(
+            'name'=>'category',
+            'value'=>'$data->category->Category',
+        ),
 		'Question',
 		'OptA',
 		'OptB',
 		'OptC',
 		'OptD',
-		/*
-		'CategoryID',
-		*/
 		array(
 			'class'=>'CButtonColumn',
 		),

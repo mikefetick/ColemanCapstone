@@ -3,6 +3,7 @@
 /* @var $model User */
 
 $this->breadcrumbs=array(
+    'Dashboard'=>array('/dashboard/Admin'),
 	'Users'=>array('index'),
 	'Manage',
 );
@@ -57,10 +58,12 @@ $('.search-form form').submit(function(){
 		'FirstName',
 		'Password',
 		'Email',
-		/*
 		'Phone',
 		'StatusID',
-		*/
+        array(
+            'name'=>'status',
+            'value'=>'$data->status->Status',
+        ),
 		array(
 			'class'=>'CButtonColumn',
 		),

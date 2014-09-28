@@ -3,6 +3,7 @@
 /* @var $model Category */
 
 $this->breadcrumbs=array(
+    'Dashboard'=>array('/dashboard/Admin'),
 	'Categories'=>array('index'),
 	'Create',
 );

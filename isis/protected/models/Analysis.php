@@ -62,7 +62,7 @@ class Analysis extends CActiveRecord
 	{
 		return array(
 			'idAnalysis' => 'Analysis',
-			'CustomerID' => 'Customer',
+            'CustomerID' => 'Customer',
 			'UserID' => 'User',
 			'Comments' => 'Comments',
 		);

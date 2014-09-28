@@ -3,6 +3,7 @@
 /* @var $model Status */
 
 $this->breadcrumbs=array(
+    'Dashboard'=>array('/dashboard/Admin'),
 	'Statuses'=>array('index'),
 	$model->idStatus=>array('view','id'=>$model->idStatus),
 	'Update',

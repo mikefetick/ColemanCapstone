@@ -31,7 +31,8 @@
             <li><strong>
                     <?php echo CHtml::encode($data-> getAttributeLabel('Analysis'));
                     ?>:</strong>
-                <?php echo CHtml::link(CHtml::encode($data->idAnalysis), array('analysis/view', 'id'=>($data->idAnalysis)));
+                <?php echo CHtml::link(CHtml::encode($data-> idAnalysis),
+                    array('analysis/view', 'id'=>($data->idAnalysis)));
                 ?></li>
         </ul>
     </li>

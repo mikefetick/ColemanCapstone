@@ -3,6 +3,7 @@
 /* @var $model Survey */
 
 $this->breadcrumbs=array(
+    'Dashboard'=>array('/dashboard/Admin'),
 	'Surveys'=>array('index'),
 	'Create',
 );

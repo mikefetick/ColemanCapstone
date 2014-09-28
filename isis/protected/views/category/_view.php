@@ -2,16 +2,18 @@
 /* @var $this CategoryController */
 /* @var $data Category */
 ?>
+<?php Yii::app()-> clientScript-> registerCssFile(
+    Yii::app()-> assetManager-> publish(
+        Yii::getPathOfAlias('application.assets').'/categories.css'
+    ))
+?>
 
 <div class="view">
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('idCategory')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->idCategory), array('view', 'id'=>$data->idCategory)); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Category')); ?>:</b>
-	<?php echo CHtml::encode($data->Category); ?>
-	<br />
-
-
+    <li><h2>
+            <?php
+            $title = CHtml::encode($data-> Category);
+            echo CHtml::link($title, array('view', 'id' => $data-> idCategory));
+            ?>
+    <ul></ul>
+    </li>
 </div>

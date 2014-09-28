@@ -3,6 +3,7 @@
 /* @var $model Status */
 
 $this->breadcrumbs=array(
+    'Dashboard'=>array('/dashboard/Admin'),
 	'Statuses'=>array('index'),
 	'Create',
 );

@@ -3,6 +3,7 @@
 /* @var $model Proposal */
 
 $this->breadcrumbs=array(
+    'Dashboard'=>array('/dashboard/Admin'),
 	'Proposals'=>array('index'),
 	$model->ProposalID=>array('view','id'=>$model->ProposalID),
 	'Update',

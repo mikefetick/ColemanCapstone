@@ -3,6 +3,7 @@
 /* @var $model Usertype */
 
 $this->breadcrumbs=array(
+    'Dashboard'=>array('/dashboard/Admin'),
 	'Usertypes'=>array('index'),
 	'Manage',
 );

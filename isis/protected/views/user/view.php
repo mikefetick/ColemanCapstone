@@ -3,6 +3,7 @@
 /* @var $model User */
 
 $this->breadcrumbs=array(
+    'Dashboard'=>array('/dashboard/Admin'),
 	'Users'=>array('index'),
 	$model->idUser,
 );

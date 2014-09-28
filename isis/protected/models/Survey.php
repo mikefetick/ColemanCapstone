@@ -58,7 +58,7 @@ class Survey extends CActiveRecord
 		return array(
 			'idSurvey' => 'Id Survey',
 			'Answer' => 'Answer',
-			'idAnalysis' => 'Id Analysis',
+			'idAnalysis' => 'Analysis',
 		);
 	}
 

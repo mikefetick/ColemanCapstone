@@ -3,7 +3,8 @@
 /* @var $model Analysis */
 
 $this->breadcrumbs=array(
-	'Analysises'=>array('index'),
+    'Dashboard'=>array('/dashboard/Admin'),
+	'Analyses'=>array('index'),
 	$model->idAnalysis=>array('view','id'=>$model->idAnalysis),
 	'Update',
 );

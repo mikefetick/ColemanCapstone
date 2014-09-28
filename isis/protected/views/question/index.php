@@ -3,6 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
+    'Dashboard'=>array('/dashboard/Admin'),
 	'Questions',
 );
 
@@ -17,4 +18,10 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
+    'itemsTagName' => 'ol',
+    'itemsCssClass' => 'questions',
+    'sortableAttributes' => array(
+        'CategoryID', 'Question'
+    ),
+    'template' => '{sorter} {pager} {items} {sorter} {pager}',
 )); ?>

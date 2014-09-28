@@ -45,7 +45,8 @@
             <li><strong>
                     <?php echo CHtml::encode($data-> getAttributeLabel('Status'));
                     ?>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                <?php echo $data-> StatusID ? 'Active' : 'Inactive';
+                <?php echo CHtml::link(CHtml::encode($data-> StatusID ? 'Active' : 'Inactive'),
+                    array('status/view', 'id'=>($data->StatusID)));
                 ?></li>
         </ul>
     </li>

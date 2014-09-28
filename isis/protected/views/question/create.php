@@ -3,6 +3,7 @@
 /* @var $model Question */
 
 $this->breadcrumbs=array(
+    'Dashboard'=>array('/dashboard/Admin'),
 	'Questions'=>array('index'),
 	'Create',
 );
